@@ -1,0 +1,30 @@
+Authors: Ryan Bergquist, Choong Huh
+Assignment: Project 1
+CS460
+
+Files included: 
+
+	thread_start.s 
+	thread_switch.s
+	thread_test.c
+	README
+	makefile
+	Project1.docx
+
+To run:
+
+	Build the program via "make". Then execute with ./context_switch
+
+Tested with:
+	stack size of:
+		128, 256, 512, 1024, 2048
+	Fault on: 
+		128, 256, 512
+	Clean test:
+		1024, 2048
+
+Stress test:
+	Terminates clean when main finished first
+	faults when child finishes first
+
+	explanation in Project1.docx
